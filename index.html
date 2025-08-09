@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Reinaldo N. Pereira</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1f1f1f;
+      border-bottom: 2px solid #333;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #555;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 5px;
+      font-size: 1em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #f0f0f0;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .projeto {
+      margin: 20px 0;
+      background-color: #1c1c1c;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #007acc;
+      transition: background-color 0.3s;
+    }
+
+    .projeto:hover {
+      background-color: #252525;
+    }
+
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #2c2c2c;
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #005f99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+      background-color: #1f1f1f;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      main {
+        padding: 0 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/giper.jpg">
+    <h1>Reinaldo N. Pereira</h1>
+    <p>Shell Script Developer & Entusiasta de Código Aberto</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>
+        Tenho boa vivência com <strong>Shell Script</strong>, desenvolvendo soluções para automação de tarefas no sistema Linux.  
+        Crio ferramentas voltadas à segurança, redes e produtividade no terminal.  
+        Sou entusiasta do software livre e gosto de transformar ideias em soluções simples e eficazes no terminal.
+      </p>
+      <p>
+        Também possuo certificados em <strong>tecnologia da informação</strong> e <strong>segurança cibernética</strong>,
+        com foco em proteção de redes, análise de vulnerabilidades e boas práticas de segurança.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+
+      <div class="projeto">
+        <strong><a href="https://github.com/rskallux/fulldorks" target="_blank">🔍 fulldorks</a></strong><br>
+        Dorking do Google para encontrar informações difíceis com buscas avançadas.
+      </div>
+
+      <div class="projeto">
+        <strong><a href="https://github.com/rskallux/hagn3scan.github.io" target="_blank">📡 hagn3scan</a></strong><br>
+        Scanner de rede e serviços com tentativa de acesso e registro visual.
+      </div>
+
+      <div class="projeto">
+        <strong><a href="https://github.com/rskallux/skod" target="_blank">📷 skod</a></strong><br>
+        Script simples para gerar QR Codes no terminal Linux.
+      </div>
+
+      <div class="projeto">
+        <strong><a href="https://github.com/rskallux/searchline.github.io" target="_blank">🔎 searchline</a></strong><br>
+        Interface mínima para busca de comandos no sistema Linux.
+      </div>
+
+      <div class="projeto">
+        <strong><a href="https://terminalclub.github.io/" target="_blank">📘 Terminal Club</a></strong><br>
+        Blog com tutoriais e artigos sobre Shell Script.
+      </div>
+
+      <div class="projeto">
+        <strong><a href="https://github.com/reinaldokabello/leituradinamika" target="_blank">📖 leituradinamika</a></strong><br>
+        Ferramenta para leitura dinâmica de textos no terminal Linux.
+      </div>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <form action="https://formspree.io/senun71@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Reinaldo N. Pereira · Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
