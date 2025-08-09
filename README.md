@@ -1,2 +1,2 @@
 # Portifolio
-https://github.com/reinaldokabello/portifull/
+https://reinaldokabello.github.io/portifull/
